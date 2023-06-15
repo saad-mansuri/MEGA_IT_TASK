@@ -37,88 +37,8 @@ body {
 	color: $color_1;
 	font-weight: 300;
 }
-.settings {
-	height: 73px;
-	float: left;
-	background: url(https://s3.postimg.org/bqfooag4z/startific.jpg);
-	background-repeat: no-repeat;
-	width: 250px;
-	margin: 0px;
-	text-align: center;
-	font-size: 20px;
-	font-family: $font-family_2;
-	&:hover {
-		background: url(https://s17.postimg.org/74cl7s05b/logo_hover.jpg);
-		-webkit-transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0;
-		-moz-transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0;
-		-o-transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0;
-		transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0;
-	}
-	&:focus {
-		background: url(https://s17.postimg.org/74cl7s05b/logo_hover.jpg);
-		-webkit-transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0;
-		-moz-transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0;
-		-o-transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0;
-		transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0;
-		background: url(https://s3.postimg.org/bqfooag4z/startific.jpg);
-		-webkit-transition: all 0.1s ease-in-out, width 0, height 0, top 0, left 0;
-		-moz-transition: all 0.1s ease-in-out, width 0, height 0, top 0, left 0;
-		-o-transition: all 0.1s ease-in-out, width 0, height 0, top 0, left 0;
-		transition: all 0.1s ease-in-out, width 0, height 0, top 0, left 0;
-	}
-	&:active {
-		background: url(https://s3.postimg.org/bqfooag4z/startific.jpg);
-		-webkit-transition: all 0.1s ease-in-out, width 0, height 0, top 0, left 0;
-		-moz-transition: all 0.1s ease-in-out, width 0, height 0, top 0, left 0;
-		-o-transition: all 0.1s ease-in-out, width 0, height 0, top 0, left 0;
-		transition: all 0.1s ease-in-out, width 0, height 0, top 0, left 0;
-	}
-}
-.scrollbar {
-	height: 90%;
-	width: 100%;
-	overflow-y: hidden;
-	overflow-x: hidden;
-	&:hover {
-		height: 90%;
-		width: 100%;
-		overflow-y: scroll;
-		overflow-x: hidden;
-	}
-}
-#style-1 {
-	&::-webkit-scrollbar-track {
-		border-radius: 2px;
-	}
-	&::-webkit-scrollbar {
-		width: 5px;
-		background-color: $background-color_1;
-	}
-	&::-webkit-scrollbar-thumb {
-		border-radius: 10px;
-		-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
-		background-color: $background-color_2;
-	}
-}
-.fa-lg {
-	font-size: 1em;
-}
-.fa {
-	position: relative;
-	display: table-cell;
-	width: 55px;
-	height: 36px;
-	text-align: center;
-	top: 12px;
-	font-size: 20px;
-}
-.main-menu {
-	&:hover {
-		width: 250px;
-		overflow: hidden;
-		opacity: 1;
-	}
-	background: #F7F7F7;
+.custom-sidebar {
+    background: #F7F7F7;
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -130,6 +50,22 @@ body {
 	transition: width .2s linear;
 	box-shadow: 1px 0 15px rgba(0, 0, 0, 0.07);
 	opacity: 1;
+	z-index: 9999;
+    &:hover {
+		width: 250px;
+		overflow: hidden;
+		opacity: 1;
+	}
+    .darkerli {
+        text-transform: capitalize;
+    }
+    .darkerlishadow {
+        background-color: $background-color_3;
+        text-transform: capitalize;
+        -webkit-box-shadow: inset 0px 5px 5px -4px rgba(50, 50, 50, 0.55);
+        -moz-box-shadow: inset 0px 5px 5px -4px rgba(50, 50, 50, 0.55);
+        box-shadow: inset 0px 5px 5px -4px rgba(50, 50, 50, 0.55);
+    }
 	>ul {
 		margin: 7px 0;
 	}
@@ -176,47 +112,51 @@ body {
 		width: 190px;
 		font-family: $font-family_3;
 	}
-	.fb-like {
-		left: 180px;
-		position: absolute;
-		top: 15px;
-	}
-	>ul.logout {
-		position: absolute;
-		left: 0;
-		bottom: 0;
-	}
+    .scrollbar {
+        height: 90%;
+        width: 100%;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        &:hover {
+            height: 90%;
+            width: 100%;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+    }
+    #custom-sidebar__menus-listing {
+        &::-webkit-scrollbar-track {
+            border-radius: 2px;
+        }
+        &::-webkit-scrollbar {
+            width: 5px;
+            background-color: $background-color_1;
+        }
+        &::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+            background-color: $background-color_2;
+        }
+    }
+    .fa-lg {
+        font-size: 1em;
+    }
+    .fa {
+        position: relative;
+        display: table-cell;
+        width: 55px;
+        height: 36px;
+        text-align: center;
+        top: 12px;
+        font-size: 20px;
+    }
 }
-nav.main-menu.expanded {
+nav.custom-sidebar.expanded {
 	width: 250px;
 	overflow: hidden;
 	opacity: 1;
 }
-.no-touch {
-	.scrollable.hover {
-		overflow-y: hidden;
-		&:hover {
-			overflow-y: auto;
-			overflow: visible;
-		}
-	}
-	.dashboard-page {
-		nav.dashboard-menu {
-			ul {
-				li {
-					&:hover {
-						a {
-							color: $color_1;
-							background-color: $background-color_4;
-							text-shadow: 0px 0px 0px;
-						}
-					}
-				}
-			}
-		}
-	}
-}
-a {
+.custom-sidebar a {
 	&:hover {
 		text-decoration: none;
 		border-left: 0px solid #F7F7F7;
@@ -226,7 +166,7 @@ a {
 		border-left: 0px solid #F7F7F7;
 	}
 }
-nav {
+nav.custom-sidebar {
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
@@ -245,17 +185,8 @@ nav {
 		text-transform: uppercase;
 	}
 }
-.darkerli {
-	text-transform: capitalize;
-}
-.darkerlishadow {
-	background-color: $background-color_3;
-	text-transform: capitalize;
-	-webkit-box-shadow: inset 0px 5px 5px -4px rgba(50, 50, 50, 0.55);
-	-moz-box-shadow: inset 0px 5px 5px -4px rgba(50, 50, 50, 0.55);
-	box-shadow: inset 0px 5px 5px -4px rgba(50, 50, 50, 0.55);
-}
-nav.main-menu {
+
+nav.custom-sidebar {
 	li.active {
 		>a {
 			color: $color_1;
@@ -264,6 +195,7 @@ nav.main-menu {
 		}
 	}
 }
+
 .dropdown-menu {
 	>li {
 		>a {
@@ -297,22 +229,131 @@ nav.main-menu {
 		}
 	}
 }
-.dashboard-page {
-	nav.dashboard-menu {
-		ul {
-			li.active {
-				a {
-					color: $color_1;
-					background-color: $background-color_4;
-					text-shadow: 0px 0px 0px;
-				}
+
+
+
+.main-header{
+	background-color: #ffffff;
+	&__profile-icon{
+		width: 35px;
+		height: auto;
+		border-radius: 15%;
+	}
+	.navbar-brand {
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 21px;
+		padding: 6px 0 6px;
+		margin: 0;
+		// border: 1px solid;
+	}
+	.search-box {
+		position: relative;
+		width: 100%;
+		max-width: 20px;
+		// height: 45px;
+		margin: 0 5px 0 20px;
+		background-color: transparent;
+		border-radius: 6px;
+		transition: all 0.5s ease-in-out;
+		&__input {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			font-size: 15px;
+			font-weight: 400;
+			color: $color_2;
+			padding: 0 18px 0 0;
+			border: none;
+			border-radius: 6px;
+			outline: none;
+			transition: all 0.5s ease-in-out;
+		}
+		.search-box__icon {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 20%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #ffffff;
+			border-radius: 6px;
+			cursor: pointer;
+			.search-icon {
+				font-size: 20px;
+				color: $color_2;
+			}
+		}
+		.close-icon {
+			position: absolute;
+			top: 50%;
+			right: 0;
+			font-size: 17px;
+			color: $color_2;
+			padding: 5px;
+			transform: translateY(-50%);
+			transition: all 0.5s ease-in-out;
+			cursor: pointer;
+			pointer-events: none;
+			opacity: 0;
+		}
+	}
+	.search-box.open {
+		max-width: 160px;
+		border: 1px solid black;
+    	padding: 5px;
+		input {
+			padding: 0 15px 0 26px;
+		}
+		.search-box__icon {
+			border-radius: 6px 0 0 6px;
+		}
+		.close-icon {
+			transform: translateY(-50%) rotate(180deg);
+			pointer-events: auto;
+			opacity: 1;
+		}
+	}
+	&__navbar-nav{
+		@media (max-width:991px) {
+			display: flex;
+			flex-direction: inherit;
+			justify-content: center;
+		}
+		& > li{
+			@media (max-width:991px) {
+				margin: 0 15px;
 			}
 		}
 	}
 }
-.area {
-	float: left;
-	background: #e2e2e2;
-	width: 100%;
-	height: 100%;
+
+.btn{
+	&__white, &__blue{
+		border-radius: 4px;
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 22px;
+	}
+	&__white{
+		border: 1px solid $color_2;
+		&:hover{
+			background-color: #243563;
+			color: $color_1;
+			box-shadow: 0 0 10px #ccc;
+		}
+	}
+	&__blue{
+		background-color: #243563;
+		border: 1px solid $color_2;
+		color: $color_1;
+		&:hover{
+			background-color: $color_1;
+			color: #000;
+			border: 1px solid $color_2;
+			box-shadow: 0 0 10px #ccc;
+		}
+	}
 }
