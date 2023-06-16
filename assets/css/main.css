@@ -12,11 +12,6 @@ body {
     font-size: 14px;
   }
 }
-@media (max-width: 1023px) {
-  body {
-    font-size: 12px;
-  }
-}
 .custom-sidebar {
   position: fixed;
   background-color: #243666;
@@ -337,6 +332,9 @@ nav.custom-sidebar li.active > a {
   box-shadow: 0 0 10px #ccc;
 }
 
+.dashboard {
+  padding-bottom: 2rem;
+}
 .dashboard__card-wrapper {
   background-color: #ffffff;
   padding: 2.8125em 1.25em;
