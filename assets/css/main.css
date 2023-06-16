@@ -1,11 +1,4 @@
 @import "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css";
-@import "https://fonts.googleapis.com/css?family=Titillium+Web:300";
-@font-face {
-  font-family: "Titillium Web";
-  font-style: normal;
-  font-weight: 300;
-  src: local("Titillium WebLight"), local("TitilliumWeb-Light"), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format("woff");
-}
 body {
   margin: 0px;
   padding: 0px;
@@ -59,18 +52,18 @@ body {
   display: table;
   border-collapse: collapse;
   border-spacing: 0;
-  color: #fff;
+  color: #ffffff;
   font-size: 13px;
   text-decoration: none;
   transition: all 0.14s linear;
-  font-family: "Strait", sans-serif;
+  font-family: "Open Sans", arial;
 }
 .custom-sidebar li:hover {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 .custom-sidebar li:hover > a {
   text-shadow: 0px 0px 0px;
-  color: #000;
+  color: #000000;
 }
 .custom-sidebar .nav-icon {
   position: relative;
@@ -85,8 +78,8 @@ body {
   position: relative;
   vertical-align: middle;
   width: 190px;
-  font-family: "Titillium Web", sans-serif;
-  font-size: 16px;
+  font-family: "Open Sans", arial;
+  font-size: 1rem;
   font-weight: 500;
 }
 .custom-sidebar .scrollbar {
@@ -169,34 +162,34 @@ nav.custom-sidebar li {
 }
 
 nav.custom-sidebar li.active > a {
-  color: #fff;
-  background-color: #00bbbb;
+  color: #ffffff;
+  background-color: #000000;
   text-shadow: 0px 0px 0px;
 }
 
 .dropdown-menu > li > a:hover {
-  color: #fff;
-  background-color: #00bbbb;
+  color: #ffffff;
+  background-color: #000000;
   text-shadow: 0px 0px 0px;
 }
 .dropdown-menu > li > a:focus {
-  color: #fff;
-  background-color: #00bbbb;
+  color: #ffffff;
+  background-color: #000000;
   text-shadow: 0px 0px 0px;
 }
 .dropdown-menu > .active > a {
-  color: #fff;
-  background-color: #00bbbb;
+  color: #ffffff;
+  background-color: #000000;
   text-shadow: 0px 0px 0px;
 }
 .dropdown-menu > .active > a:hover {
-  color: #fff;
-  background-color: #00bbbb;
+  color: #ffffff;
+  background-color: #000000;
   text-shadow: 0px 0px 0px;
 }
 .dropdown-menu > .active > a:focus {
-  color: #fff;
-  background-color: #00bbbb;
+  color: #ffffff;
+  background-color: #000000;
   text-shadow: 0px 0px 0px;
 }
 
@@ -232,7 +225,7 @@ nav.custom-sidebar li.active > a {
   font-family: "Open Sans", arial;
   font-size: 1em;
   font-weight: 400;
-  color: #8a8a8a;
+  color: #000000;
   padding: 0 18px 0 0;
   border: none;
   border-radius: 6px;
@@ -309,27 +302,27 @@ nav.custom-sidebar li.active > a {
 }
 .btn__white:hover {
   background-color: #243563;
-  color: #fff;
+  color: #ffffff;
   box-shadow: 0 0 10px #ccc;
 }
 .btn__blue {
   background-color: #243563;
   border: 1px solid #8a8a8a;
-  color: #fff;
+  color: #ffffff;
 }
 .btn__blue:hover {
-  background-color: #fff;
-  color: #000;
+  background-color: #ffffff;
+  color: #000000;
   border: 1px solid #8a8a8a;
   box-shadow: 0 0 10px #ccc;
 }
 .btn__light-blue {
   background-color: #009EF7;
-  color: #fff;
+  color: #ffffff;
 }
 .btn__light-blue:hover {
-  background-color: #fff;
-  color: #000;
+  background-color: #ffffff;
+  color: #000000;
   border: 1px solid #8a8a8a;
   box-shadow: 0 0 10px #ccc;
 }
@@ -338,14 +331,14 @@ nav.custom-sidebar li.active > a {
   color: #8a8a8a;
 }
 .btn__gray:hover {
-  background-color: #fff;
-  color: #000;
+  background-color: #ffffff;
+  color: #000000;
   border: 1px solid #8a8a8a;
   box-shadow: 0 0 10px #ccc;
 }
 
 .dashboard__card-wrapper {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 2.8125em 1.25em;
   text-align: center;
   width: 100%;
@@ -358,12 +351,13 @@ nav.custom-sidebar li.active > a {
     padding: 30px 15px;
   }
 }
-.dashboard__getting-started-title, .dashboard__map-view-title {
+.dashboard__getting-started-title, .dashboard__map-view-title, .dashboard__my-project-title, .dashboard__SRA-title {
   font-size: 1.375em;
   font-weight: 600;
   color: #000000;
+  margin-bottom: 5px !important;
 }
-.dashboard__getting-started-img, .dashboard__map-view-img {
+.dashboard__getting-started-img, .dashboard__map-view-img, .dashboard__my-project-img {
   width: 100%;
   max-width: 200px;
   margin: auto;
@@ -377,27 +371,22 @@ nav.custom-sidebar li.active > a {
   color: gray;
   font-weight: 500;
 }
-.dashboard__my-project-title {
-  font-size: 22px;
-  font-weight: 600;
-  color: #000000;
-}
 .dashboard__my-project-img {
   width: 50px;
   border-radius: 18px;
 }
 .dashboard__my-project-viewed-label {
-  font-size: 15px;
+  font-size: 0.9375em;
   color: gray;
   font-weight: 500;
 }
 .dashboard__my-project-list-title {
-  font-size: 18px;
+  font-size: 1.125em;
   font-weight: 600;
   color: #000000;
 }
 .dashboard__my-project-list-viewed-label {
-  font-size: 14px;
+  font-size: 0.875em;
   color: gray;
 }
 .dashboard__my-project-listings {
@@ -407,7 +396,7 @@ nav.custom-sidebar li.active > a {
   padding: 10px 0;
   border-bottom: 1px dashed #ccc;
   text-decoration: none;
-  color: #000;
+  color: #000000;
 }
 .dashboard__my-project-listings a:last-child {
   border: none;
@@ -416,12 +405,12 @@ nav.custom-sidebar li.active > a {
 .dashboard__task-manager-wrap {
   background-color: #243563;
   min-height: 55%;
-  padding: 45px 20px;
+  padding: 2.8125em 1.25em;
   border-radius: 8px;
 }
 .dashboard__task-manager-title {
-  font-size: 22px;
-  color: #fff;
+  font-size: 1.375em;
+  color: #ffffff;
   font-weight: 600;
   text-align: start;
 }
@@ -453,6 +442,10 @@ nav.custom-sidebar li.active > a {
   font-size: 20px;
   font-weight: 600;
   color: #636C86;
+  margin-bottom: 0.5rem;
+}
+.dashboard__task-manager-details p:last-child {
+  margin-bottom: 0;
 }
 .dashboard__map-img {
   margin-top: 15px;
@@ -463,9 +456,4 @@ nav.custom-sidebar li.active > a {
      object-fit: cover;
   height: 250px;
   min-width: 100%;
-}
-.dashboard__SRA-title {
-  font-size: 22px;
-  font-weight: 600;
-  color: #000000;
 }/*# sourceMappingURL=main.css.map */
