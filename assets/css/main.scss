@@ -1,13 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk&family=Montserrat&display=swap');
+@import "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css";
+
 $white: #ffffff;
 $black: #000000;
 $color_2: #8a8a8a;
 $light-gray : #F5F8FA;
 $primary-font-family: "Open Sans", arial;
+// $primary-font-family: 'Familjen Grotesk', sans-serif;
+// $primary-font-family: 'Montserrat', sans-serif;
 $background-color_1: #F7F7F7;
 $background-color_2: #BFBFBF;
 $darker-blue: #243666;
 
-@import "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css";
 body {
 	margin: 0px;
 	padding: 0px;
@@ -93,6 +97,9 @@ body {
 		font-family: $primary-font-family;
 		font-size: 1rem;
 		font-weight: 500;
+		@media (max-width:991px) {
+			font-size: 1.2rem;
+		}
 	}
     .scrollbar {
         height: 90%;
@@ -131,6 +138,9 @@ body {
         text-align: center;
         top: 5px;
         font-size: 20px;
+		@media (max-width:991px) {
+			font-size: 25px;
+		}
     }
 	&__logo{
 		display: flex;
@@ -223,6 +233,9 @@ nav.custom-sidebar {
 // Header Started ------------------
 .main-header{
 	background-color: #ffffff;
+	@media (max-width:767px) {
+		background-color: red;
+	}
 	&__profile-icon{
 		width: 35px;
 		height: auto;
@@ -235,6 +248,9 @@ nav.custom-sidebar {
 		line-height: 1.4;
 		padding: 6px 0 6px;
 		margin: 0;
+		@media (max-width:991px) {
+			font-size: 1.5em;
+		}
 		// border: 1px solid;
 	}
 	.search-box {
@@ -296,7 +312,7 @@ nav.custom-sidebar {
 		border: 1px solid black;
     	padding: 5px;
 		input {
-			padding: 0 15px 0 26px;
+			padding: 0 15px 0 30px;
 		}
 		.search-box__icon {
 			border-radius: 6px 0 0 6px;
@@ -324,11 +340,15 @@ nav.custom-sidebar {
 
 // Custom Buttons Start 
 .btn{
-	&__white, &__blue{
+	&__white, &__blue, &__light-blue, &__gray{
 		border-radius: 4px;
 		font-size: 0.875em;
 		font-weight: 600;
 		line-height: 1.375rem;
+		@media (max-width:991px) {
+			font-size: 1.5em;
+			padding: 12px 15px;
+		}
 	}
 	&__white{
 		border: 1px solid $color_2;
@@ -392,10 +412,14 @@ nav.custom-sidebar {
 	}
 	&__getting-started, &__map-view, &__my-project, &__SRA{
 		&-title{
+			font-family: $primary-font-family;
 			font-size: 1.375em;
 			font-weight: 600;
 			color: $black;
 			margin-bottom: 5px !important;
+			@media (max-width:991px) {
+				font-size: 2em;
+			}
 		}
 	}
 	&__getting-started, &__map-view, &__my-project{	
@@ -412,9 +436,12 @@ nav.custom-sidebar {
 			border-radius: 18px;
 		}
 		&-label{
-			font-size: 15px;
+			font-size: 0.9375em;
 			color: gray;
 			font-weight: 500;
+			@media (max-width:991px) {
+				font-size: 1.5em;
+			}
 		}
 	}
 	&__my-project{
@@ -426,16 +453,25 @@ nav.custom-sidebar {
 			font-size: 0.9375em;
 			color: gray;
 			font-weight: 500;
+			@media (max-width:991px) {
+				font-size: 1.5em;
+			}
 		}
 		&-list{
 			&-title{
 				font-size: 1.125em;
 				font-weight: 600;
 				color: $black;
+				@media (max-width:991px) {
+					font-size: 1.5em;
+				}
 			}
 			&-viewed-label{
 				font-size: 0.875em;
 				color: gray;
+				@media (max-width:991px) {
+					font-size: 1.2em;
+				}
 			}
 		}
 	}
@@ -464,12 +500,18 @@ nav.custom-sidebar {
 			color: $white;
 			font-weight: 600;
 			text-align: start;
+			@media (max-width:991px) {
+				font-size: 2em;
+			}
 		}
 		&-contents-wrap{
 			margin-top: -13%;
 			display: flex;
 			justify-content: space-between;
 			padding: 0 20px;
+			@media (width:1024px) {
+				margin-top: -25%;
+			}
 			@media (max-width:1024px) {
 				display: block;
 				padding: 0 15px;

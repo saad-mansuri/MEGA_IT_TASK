@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Familjen+Grotesk&family=Montserrat&display=swap");
 @import "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css";
 body {
   margin: 0px;
@@ -77,6 +78,11 @@ body {
   font-size: 1rem;
   font-weight: 500;
 }
+@media (max-width: 991px) {
+  .custom-sidebar .nav-text {
+    font-size: 1.2rem;
+  }
+}
 .custom-sidebar .scrollbar {
   height: 90%;
   width: 100%;
@@ -111,6 +117,11 @@ body {
   text-align: center;
   top: 5px;
   font-size: 20px;
+}
+@media (max-width: 991px) {
+  .custom-sidebar .fa {
+    font-size: 25px;
+  }
 }
 .custom-sidebar__logo {
   display: flex;
@@ -191,6 +202,11 @@ nav.custom-sidebar li.active > a {
 .main-header {
   background-color: #ffffff;
 }
+@media (max-width: 767px) {
+  .main-header {
+    background-color: red;
+  }
+}
 .main-header__profile-icon {
   width: 35px;
   height: auto;
@@ -203,6 +219,11 @@ nav.custom-sidebar li.active > a {
   line-height: 1.4;
   padding: 6px 0 6px;
   margin: 0;
+}
+@media (max-width: 991px) {
+  .main-header .navbar-brand {
+    font-size: 1.5em;
+  }
 }
 .main-header .search-box {
   position: relative;
@@ -263,7 +284,7 @@ nav.custom-sidebar li.active > a {
   padding: 5px;
 }
 .main-header .search-box.open input {
-  padding: 0 15px 0 26px;
+  padding: 0 15px 0 30px;
 }
 .main-header .search-box.open .search-box__icon {
   border-radius: 6px 0 0 6px;
@@ -286,11 +307,17 @@ nav.custom-sidebar li.active > a {
   }
 }
 
-.btn__white, .btn__blue {
+.btn__white, .btn__blue, .btn__light-blue, .btn__gray {
   border-radius: 4px;
   font-size: 0.875em;
   font-weight: 600;
   line-height: 1.375rem;
+}
+@media (max-width: 991px) {
+  .btn__white, .btn__blue, .btn__light-blue, .btn__gray {
+    font-size: 1.5em;
+    padding: 12px 15px;
+  }
 }
 .btn__white {
   border: 1px solid #8a8a8a;
@@ -350,10 +377,16 @@ nav.custom-sidebar li.active > a {
   }
 }
 .dashboard__getting-started-title, .dashboard__map-view-title, .dashboard__my-project-title, .dashboard__SRA-title {
+  font-family: "Open Sans", arial;
   font-size: 1.375em;
   font-weight: 600;
   color: #000000;
   margin-bottom: 5px !important;
+}
+@media (max-width: 991px) {
+  .dashboard__getting-started-title, .dashboard__map-view-title, .dashboard__my-project-title, .dashboard__SRA-title {
+    font-size: 2em;
+  }
 }
 .dashboard__getting-started-img, .dashboard__map-view-img, .dashboard__my-project-img {
   width: 100%;
@@ -365,9 +398,14 @@ nav.custom-sidebar li.active > a {
   border-radius: 18px;
 }
 .dashboard__map-view-label {
-  font-size: 15px;
+  font-size: 0.9375em;
   color: gray;
   font-weight: 500;
+}
+@media (max-width: 991px) {
+  .dashboard__map-view-label {
+    font-size: 1.5em;
+  }
 }
 .dashboard__my-project-img {
   width: 50px;
@@ -378,14 +416,29 @@ nav.custom-sidebar li.active > a {
   color: gray;
   font-weight: 500;
 }
+@media (max-width: 991px) {
+  .dashboard__my-project-viewed-label {
+    font-size: 1.5em;
+  }
+}
 .dashboard__my-project-list-title {
   font-size: 1.125em;
   font-weight: 600;
   color: #000000;
 }
+@media (max-width: 991px) {
+  .dashboard__my-project-list-title {
+    font-size: 1.5em;
+  }
+}
 .dashboard__my-project-list-viewed-label {
   font-size: 0.875em;
   color: gray;
+}
+@media (max-width: 991px) {
+  .dashboard__my-project-list-viewed-label {
+    font-size: 1.2em;
+  }
 }
 .dashboard__my-project-listings {
   margin-top: 15px;
@@ -412,11 +465,21 @@ nav.custom-sidebar li.active > a {
   font-weight: 600;
   text-align: start;
 }
+@media (max-width: 991px) {
+  .dashboard__task-manager-title {
+    font-size: 2em;
+  }
+}
 .dashboard__task-manager-contents-wrap {
   margin-top: -13%;
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
+}
+@media (width: 1024px) {
+  .dashboard__task-manager-contents-wrap {
+    margin-top: -25%;
+  }
 }
 @media (max-width: 1024px) {
   .dashboard__task-manager-contents-wrap {
