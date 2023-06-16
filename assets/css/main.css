@@ -320,23 +320,130 @@ nav.custom-sidebar li.active > a {
   border: 1px solid #8a8a8a;
   box-shadow: 0 0 10px #ccc;
 }
+.btn__gray {
+  background-color: #F9F9F9;
+  color: #8a8a8a;
+}
+.btn__gray:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #8a8a8a;
+  box-shadow: 0 0 10px #ccc;
+}
 
 .dashboard__card-wrapper {
   background-color: #fff;
-  padding: 30px 15px;
+  padding: 45px 20px;
   text-align: center;
   width: 100%;
   margin-top: 30px;
   border-radius: 8px;
   box-shadow: 0px 0px 10px #ccc;
 }
-.dashboard__card-wrapper h3 {
-  font-size: 26px;
+@media (max-width: 1024px) {
+  .dashboard__card-wrapper {
+    padding: 30px 15px;
+  }
+}
+.dashboard__getting-started-title {
+  font-size: 22px;
   font-weight: 600;
   color: #000000;
 }
-.dashboard__card-wrapper img {
+.dashboard__getting-started-img {
   width: 100%;
   max-width: 200px;
   margin: auto;
+}
+.dashboard__my-project-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #000000;
+}
+.dashboard__my-project-img {
+  width: 50px;
+  border-radius: 18px;
+}
+.dashboard__my-project-viewed-label {
+  font-size: 15px;
+  color: gray;
+  font-weight: 500;
+}
+.dashboard__my-project-list-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+}
+.dashboard__my-project-list-viewed-label {
+  font-size: 14px;
+  color: gray;
+}
+.dashboard__my-project-listings {
+  margin-top: 15px;
+}
+.dashboard__my-project-listings a {
+  padding: 10px 0;
+  border-bottom: 1px dashed #ccc;
+  text-decoration: none;
+  color: #000;
+}
+.dashboard__my-project-listings a:last-child {
+  border: none;
+  padding-bottom: 0;
+}
+.dashboard__task-manager-wrap {
+  background-color: #243563;
+  min-height: 55%;
+  padding: 45px 20px;
+  border-radius: 8px;
+}
+.dashboard__task-manager-title {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 600;
+  text-align: start;
+}
+.dashboard__task-manager-contents-wrap {
+  margin-top: -13%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+@media (max-width: 1024px) {
+  .dashboard__task-manager-contents-wrap {
+    display: block;
+    padding: 0 15px;
+  }
+}
+.dashboard__task-manager-details {
+  text-align: start;
+  padding: 15px 20px;
+  background-color: #F9F9F9;
+  min-width: 45%;
+  border-radius: 8px;
+}
+@media (max-width: 1024px) {
+  .dashboard__task-manager-details {
+    margin-top: 10px;
+  }
+}
+.dashboard__task-manager-details p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #636C86;
+}
+.dashboard__incidence-analysis-img {
+  margin-top: 15px;
+}
+.dashboard__incidence-analysis-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 250px;
+  min-width: 100%;
+}
+.dashboard__SRA-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #000000;
 }/*# sourceMappingURL=main.css.map */

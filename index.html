@@ -138,21 +138,10 @@
         <div class="dashboard">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-4 d-flex"> 
+                    <div class="col-md-6 col-lg-4 d-flex"> 
                         <div class="dashboard__card-wrapper">
-                            <h3>Getting Started</h3>
-                            <img src="assets/images/3.svg" alt="" class="mt-4 mb-5">
-                            <div>
-                                <a href="#knowledge-base">
-                                    <button class="btn btn__light-blue">Knowlege Base</button>
-                                </a>
-                            </div>
-                        </div>    
-                    </div>
-                    <div class="col-md-4 d-flex">
-                        <div class="dashboard__card-wrapper">
-                            <h3>Getting Started</h3>
-                            <img src="assets/images/3.svg" alt="" class="mt-4 mb-5">
+                            <h3 class="dashboard__getting-started-title">Getting Started</h3>
+                            <img class="dashboard__getting-started-img mt-4 mb-5" src="assets/images/3.svg" alt="">
                             <div>
                                 <a href="#knowledge-base">
                                     <button class="btn btn__light-blue">Knowlege Base</button>
@@ -160,46 +149,115 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 d-flex"> 
+                    <div class="col-md-6 col-lg-4 d-flex">
                         <div class="dashboard__card-wrapper">
-                            <h3>Getting Started</h3>
-                            <img src="assets/images/3.svg" alt="" class="mt-4 mb-5">
-                            <div>
-                                <a href="#knowledge-base">
-                                    <button class="btn btn__light-blue">Knowlege Base</button>
+                            <div class="dashboard__my-project d-flex justify-content-between">
+                                <div class="dashboard__my-project-contents">
+                                    <h5 class="dashboard__my-project-title text-start mb-0">My Project</h5>
+                                    <span class="dashboard__my-project-viewed-label">Last 5 project viewed</span>
+                                </div>
+                                <div class="">
+                                    <a href="#view-all-projects">
+                                        <button class="btn btn__gray">View All</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="dashboard__my-project-listings">
+                                <a href="#project-a" class="d-flex justify-content-between align-items-center">
+                                    <div class="dashboard__my-project-contents">
+                                        <h6 class="dashboard__my-project-list-title text-start mb-0">Project A</h6>
+                                        <span class="dashboard__my-project-list-viewed-label">Corporate Office</span>
+                                    </div>
+                                    <div>
+                                        <img src="assets/images/project.png" class="dashboard__my-project-img" alt="">
+                                    </div>
+                                </a>
+                                <a href="#project-b" class="d-flex justify-content-between align-items-center">
+                                    <div class="dashboard__my-project-contents">
+                                        <h6 class="dashboard__my-project-list-title text-start mb-0">Project B</h6>
+                                        <span class="dashboard__my-project-list-viewed-label">Corporate Office</span>
+                                    </div>
+                                    <div>
+                                        <img src="assets/images/project.png" class="dashboard__my-project-img" alt="">
+                                    </div>
+                                </a>
+                                <a href="#project-c" class="d-flex justify-content-between align-items-center">
+                                    <div class="dashboard__my-project-contents">
+                                        <h6 class="dashboard__my-project-list-title text-start mb-0">Project C</h6>
+                                        <span class="dashboard__my-project-list-viewed-label text-start">Corporate Office</span>
+                                    </div>
+                                    <div>
+                                        <img src="assets/images/project.png" class="dashboard__my-project-img" alt="">
+                                    </div>
+                                </a>
+                                <a href="#project-d" class="d-flex justify-content-between align-items-center">
+                                    <div class="dashboard__my-project-contents">
+                                        <h6 class="dashboard__my-project-list-title text-start mb-0">Project D</h6>
+                                        <span class="dashboard__my-project-list-viewed-label text-start">Corporate Office</span>
+                                    </div>
+                                    <div>
+                                        <img src="assets/images/project.png" class="dashboard__my-project-img" alt="">
+                                    </div>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 d-flex"> 
+                    <div class="col-md-6 col-lg-4 d-flex"> 
                         <div class="dashboard__card-wrapper">
-                            <h3>Getting Started</h3>
-                            <img src="assets/images/3.svg" alt="" class="mt-4 mb-5">
-                            <div>
-                                <a href="#knowledge-base">
-                                    <button class="btn btn__light-blue">Knowlege Base</button>
+                            <p class="dashboard__SRA-title">Create your first Security Risk Assessment (SRA)</p>
+                            <img class="dashboard__getting-started-img mt-4 mb-5" src="assets/images/3.svg" alt="">
+                            <div class="d-flex justify-content-center">
+                                <a href="#create">
+                                    <button class="btn btn__light-blue">Create</button>
+                                </a>
+                                <a href="#quick-guide">
+                                    <button class="btn btn__gray ms-3">Quick Guide</button>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 d-flex"> 
-                        <div class="dashboard__card-wrapper">
-                            <h3>Getting Started</h3>
-                            <img src="assets/images/3.svg" alt="" class="mt-4 mb-5">
-                            <div>
-                                <a href="#knowledge-base">
-                                    <button class="btn btn__light-blue">Knowlege Base</button>
-                                </a>
+                    <div class="col-md-6 col-lg-4 d-flex">
+                        <div class="dashboard__card-wrapper p-0">
+                            <div class="dashboard__task-manager-wrap">
+                                <h3 class="dashboard__task-manager-title">Task Manager</h3>
+                            </div>
+                            <div class="dashboard__task-manager-contents-wrap">
+                                <div class="dashboard__task-manager-details">
+                                    <p class="mb-2">Pending</p>
+                                    <p class="mb-0">37</p>
+                                </div>
+                                <div class="dashboard__task-manager-details">
+                                    <p class="mb-1">Completed</p>
+                                    <p class="mb-0">6</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 d-flex"> 
+                    <div class="col-md-6 col-lg-4 d-flex"> 
                         <div class="dashboard__card-wrapper">
-                            <h3>Getting Started</h3>
-                            <img src="assets/images/3.svg" alt="" class="mt-4 mb-5">
+                            <div class="dashboard__my-project d-flex justify-content-between">
+                                <div class="dashboard__my-project-contents text-start">
+                                    <h5 class="dashboard__my-project-title mb-0">Incident Analysis</h5>
+                                    <span class="dashboard__my-project-viewed-label">Incident in last 48 hours</span>
+                                </div>
+                                <div class="">
+                                    <a href="#view-all-projects">
+                                        <button class="btn btn__gray">View Map</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="dashboard__incidence-analysis-img">
+                                <img src="assets/images/incident-analysis.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 d-flex"> 
+                        <div class="dashboard__card-wrapper">
+                            <h3 class="dashboard__getting-started-title">Risk Dashboard</h3>
+                            <img class="dashboard__getting-started-img mt-4 mb-5" src="assets/images/3.svg" alt="">
                             <div>
                                 <a href="#knowledge-base">
-                                    <button class="btn btn__light-blue">Knowlege Base</button>
+                                    <button class="btn btn__light-blue">View Rish Dashboard</button>
                                 </a>
                             </div>
                         </div>

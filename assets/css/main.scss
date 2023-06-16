@@ -21,16 +21,10 @@ body {
 	padding: 0px;
 	font-family: $font-family_1;
 	background-color: #F5F8FA;
-	// background: url('https://static.tumblr.com/94eb957a00fd03c0c2f7d26decd71578/u1rhacw/osAmyyh1q/tumblr_static_tumblr_static_gaussian_blur_gradient_desktop_1680x943_wallpaper-393751.jpg');
-	// color: $color_1;
-	// font-weight: 300;
 }
 .custom-sidebar {
 	position: fixed;
     background-color: #243666;
-	// position: absolute;
-	// top: 0;
-	// bottom: 0;
 	height: 100%;
 	left: 0;
 	width: 70px;
@@ -364,31 +358,142 @@ nav.custom-sidebar {
 			box-shadow: 0 0 10px #ccc;
 		}
 	}
+	&__gray{
+		background-color: #F9F9F9;
+		color: $color_2;
+		&:hover{
+			background-color: $color_1;
+			color: #000;
+			border: 1px solid $color_2;
+			box-shadow: 0 0 10px #ccc;
+		}
+	}	
 }
-
 // Custom Buttons END
 
-
+// .bg-blue{
+// 	background-color: #243563;
+// 	min-height: 50%;
+// }
 .dashboard{
 	&__card-wrapper{
 		background-color: $color_1;
-		padding: 30px 15px;
+		padding: 45px 20px;
 		text-align: center;
 		width: 100%;
 		margin-top: 30px;
 		border-radius: 8px;
 		box-shadow: 0px 0px 10px #ccc;
+		@media (max-width:1024px) {
+			padding: 30px 15px;
+		}
 	}
-	&__card-wrapper{
-		h3{
-			font-size: 26px;
+	&__getting-started{	
+		&-title{
+			font-size: 22px;
 			font-weight: 600;
 			color: #000000;
 		}
-		img{
+		&-img{
 			width: 100%;
 			max-width: 200px;
 			margin: auto;
+		}
+	}
+	&__my-project{
+		&-title{
+			font-size: 22px;
+			font-weight: 600;
+			color: #000000;
+		}
+		&-img{
+			width: 50px;
+			border-radius: 18px;
+		}
+		&-viewed-label{
+			font-size: 15px;
+			color: gray;
+			font-weight: 500;
+		}
+		&-list{
+			&-title{
+				font-size: 18px;
+				font-weight: 600;
+				color: #000000;
+			}
+			&-viewed-label{
+				font-size: 14px;
+				color: gray;
+			}
+		}
+	}
+	&__my-project-listings{
+		margin-top: 15px;
+		a{
+			padding: 10px 0;
+			border-bottom: 1px dashed #ccc;
+			text-decoration: none;
+			color: #000;
+			&:last-child{
+				border: none;
+				padding-bottom: 0;
+			}
+		}
+	}
+	&__task-manager{
+		&-wrap{
+			background-color: #243563;
+			min-height: 55%;
+			padding: 45px 20px;
+			border-radius: 8px;
+		}
+		&-title{
+			font-size: 22px;
+			color: $color_1;
+			font-weight: 600;
+			text-align: start;
+		}
+		&-contents-wrap{
+			margin-top: -13%;
+			display: flex;
+			justify-content: space-between;
+			padding: 0 20px;
+			@media (max-width:1024px) {
+				display: block;
+				padding: 0 15px;
+			}
+		}
+		&-details{
+			text-align: start;
+			padding: 15px 20px;
+			background-color: #F9F9F9;
+			min-width: 45%;
+			border-radius: 8px;
+			@media (max-width:1024px) {
+				margin-top: 10px;
+			}
+			p{
+				font-size: 20px;
+				font-weight: 600;
+				color: #636C86;
+				
+			}
+		}
+	}
+	&__incidence-analysis-img{
+		margin-top: 15px;
+		img{
+			width: 100%;
+			object-fit: cover;
+			height: 250px;
+			min-width: 100%;
+		}
+	}
+	&__SRA{
+		&-title{
+			font-size: 22px;
+			font-weight: 600;
+			color: #000000;	
 		}
 	}
 }
