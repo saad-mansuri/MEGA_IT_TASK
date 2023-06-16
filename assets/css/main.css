@@ -355,6 +355,20 @@ nav.custom-sidebar li.active > a {
   max-width: 200px;
   margin: auto;
 }
+.dashboard__map-view-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #000000;
+}
+.dashboard__map-view-img {
+  width: 50px;
+  border-radius: 18px;
+}
+.dashboard__map-view-label {
+  font-size: 15px;
+  color: gray;
+  font-weight: 500;
+}
 .dashboard__my-project-title {
   font-size: 22px;
   font-weight: 600;
@@ -432,10 +446,10 @@ nav.custom-sidebar li.active > a {
   font-weight: 600;
   color: #636C86;
 }
-.dashboard__incidence-analysis-img {
+.dashboard__map-img {
   margin-top: 15px;
 }
-.dashboard__incidence-analysis-img img {
+.dashboard__map-img img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
