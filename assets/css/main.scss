@@ -21,7 +21,20 @@ body {
 	padding: 0px;
 	font-family: $font-family_1;
 	background-color: #F5F8FA;
+	font-size: 16px;
 }
+@media (max-width:1439px) {
+	body{
+		font-size: 14px;
+	}
+}
+@media (max-width:1023px) {
+	body{
+		font-size: 12px;
+	}
+}
+
+// Siderbar Styling Started ------------------
 .custom-sidebar {
 	position: fixed;
     background-color: #243666;
@@ -175,7 +188,6 @@ nav.custom-sidebar {
 		text-transform: uppercase;
 	}
 }
-
 nav.custom-sidebar {
 	li.active {
 		>a {
@@ -185,7 +197,6 @@ nav.custom-sidebar {
 		}
 	}
 }
-
 .dropdown-menu {
 	>li {
 		>a {
@@ -219,9 +230,9 @@ nav.custom-sidebar {
 		}
 	}
 }
+// Siderbar Styling END ------------------
 
-
-
+// Header Started ------------------
 .main-header{
 	background-color: #ffffff;
 	&__profile-icon{
@@ -230,9 +241,10 @@ nav.custom-sidebar {
 		border-radius: 15%;
 	}
 	.navbar-brand {
-		font-size: 16px;
+		font-family: $font-family_1;
+		font-size: 1em;
 		font-weight: 600;
-		line-height: 21px;
+		line-height: 1.4;
 		padding: 6px 0 6px;
 		margin: 0;
 		// border: 1px solid;
@@ -250,7 +262,8 @@ nav.custom-sidebar {
 			position: relative;
 			width: 100%;
 			height: 100%;
-			font-size: 15px;
+			font-family: $font-family_1;
+			font-size: 1em;
 			font-weight: 400;
 			color: $color_2;
 			padding: 0 18px 0 0;
@@ -325,9 +338,9 @@ nav.custom-sidebar {
 .btn{
 	&__white, &__blue{
 		border-radius: 4px;
-		font-size: 14px;
+		font-size: 0.875em;
 		font-weight: 600;
-		line-height: 22px;
+		line-height: 1.375rem;
 	}
 	&__white{
 		border: 1px solid $color_2;
@@ -378,19 +391,19 @@ nav.custom-sidebar {
 .dashboard{
 	&__card-wrapper{
 		background-color: $color_1;
-		padding: 45px 20px;
+		padding: 2.8125em 1.25em;
 		text-align: center;
 		width: 100%;
-		margin-top: 30px;
+		margin-top: 2.1875em;
 		border-radius: 8px;
 		box-shadow: 0px 0px 10px #ccc;
 		@media (max-width:1024px) {
 			padding: 30px 15px;
 		}
 	}
-	&__getting-started{	
+	&__getting-started, &__map-view{	
 		&-title{
-			font-size: 22px;
+			font-size: 1.375em;
 			font-weight: 600;
 			color: #000000;
 		}
@@ -402,11 +415,11 @@ nav.custom-sidebar {
 	}
 
 	&__map-view{
-		&-title{
-			font-size: 22px;
-			font-weight: 600;
-			color: #000000;
-		}
+		// &-title{
+		// 	font-size: 22px;
+		// 	font-weight: 600;
+		// 	color: #000000;
+		// }
 		&-img{
 			width: 50px;
 			border-radius: 18px;
